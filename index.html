@@ -3,52 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nina Food Delivery</title>
+  <title>Nina - Home</title>
   <link rel="stylesheet" href="style.css"/>
+  <style>
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn ease 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    nav a {
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcdd2;
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <header class="fade-in">
     <h1>Nina</h1>
     <p>Fast & Fresh Food Delivered to You</p>
     <nav>
-      <a href="#menu">Menu</a>
-      <a href="#how">How It Works</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section id="menu">
-    <h2>Our Menu</h2>
-    <ul>
-      <li>Veg Biryani</li>
-      <li>Butter Chicken</li>
-      <li>Pasta Combo</li>
-      <li>Paneer Wrap</li>
-    </ul>
-  </section>
+  <main class="fade-in">
+    <h2>Welcome to Nina!</h2>
+    <p>We deliver fresh, delicious meals to your doorstep with speed and care. Explore our menu and see what we’ve cooked up for you!</p>
+  </main>
 
-  <section id="how">
-    <h2>How It Works</h2>
-    <ol>
-      <li>Browse our menu</li>
-      <li>Place your order online or call</li>
-      <li>We deliver to your doorstep</li>
-    </ol>
-  </section>
-
-  <section id="about">
-    <h2>About Nina</h2>
-    <p>At Nina, we bring delicious meals from your favorite restaurants straight to your door. Fast, fresh, and full of flavor!</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: hello@ninafood.com</p>
-    <p>Phone: +123-456-7890</p>
-  </section>
-
-  <footer>
+  <footer class="fade-in">
     <p>&copy; 2025 Nina Food Delivery</p>
   </footer>
 </body>
