@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nina - Home</title>
-  <link rel="stylesheet" href="style.css"/>
-  <style>
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn ease 2s forwards;
-    }
-
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-
-    nav a {
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #ffcdd2;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nina | Food Delivery</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="fade-in">
-    <h1>Nina</h1>
-    <p>Fast & Fresh Food Delivered to You</p>
+  <header>
+    <div class="logo">Nina</div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
     </nav>
+    <button class="signup-btn">Sign Up</button>
   </header>
 
-  <main class="fade-in">
-    <h2>Welcome to Nina!</h2>
-    <p>We deliver fresh, delicious meals to your doorstep with speed and care. Explore our menu and see what we’ve cooked up for you!</p>
-  </main>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>It's not just <br><span>Food, It's an Experience.</span></h1>
+      <div class="hero-buttons">
+        <button class="primary-btn">View Menu</button>
+        <button class="secondary-btn">Book a Table</button>
+      </div>
+      <div class="reviews">
+        <img src="users.png" alt="users">
+        <span>45+ Reviews</span>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="dish.png" alt="Delicious Food">
+    </div>
+  </section>
 
-  <footer class="fade-in">
-    <p>&copy; 2025 Nina Food Delivery</p>
+  <section class="featured-dishes">
+    <div class="dish-card">
+      <img src="pasta.png" alt="Pasta">
+      <h3>Pappardelle</h3>
+      <p>With vegetables</p>
+      <span>$35.00</span>
+    </div>
+    <div class="dish-card">
+      <img src="ravioli.png" alt="Ravioli">
+      <h3>Ravioli Stuffed</h3>
+      <p>With pesto sauce</p>
+      <span>$35.00</span>
+    </div>
+    <div class="dish-card">
+      <img src="pasta.png" alt="Pasta Again">
+      <h3>Pappardelle</h3>
+      <p>With vegetables</p>
+      <span>$35.00</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nina. All rights reserved.</p>
   </footer>
 </body>
 </html>
